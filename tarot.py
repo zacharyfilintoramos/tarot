@@ -7,7 +7,7 @@ position = ('Upright', 'Reversed')
 
 count = 0
 while count != 3:
-	sampled_list = random.sample(deck, 1)
-	sampled_position = random.sample(position, 1)
-	print(sampled_list + sampled_position)
+	sampled_list = random.choice(deck)
+	sampled_position = random.choice(position)
+	print(sampled_list + ', ' + sampled_position)
 	count = count + 1
